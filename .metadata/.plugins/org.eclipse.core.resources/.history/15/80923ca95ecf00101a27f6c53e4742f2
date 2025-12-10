@@ -1,0 +1,14 @@
+package fileHandling;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class File02 {
+
+	public static void main(String[] args) throws IOException {
+		
+		FileWriter file = new FileWriter("");
+
+	}
+
+}

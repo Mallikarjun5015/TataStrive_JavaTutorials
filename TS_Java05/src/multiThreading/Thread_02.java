@@ -1,0 +1,50 @@
+package multiThreading;
+
+class Thread01 implements Runnable {
+
+	 @Override
+	    public void run() {
+	        int i = 1;
+	        while (i < 10) {
+	            System.out.println("Thread 01 is running\n01 is happy");
+	            try {
+					MyThread01.sleep(5000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+	            i++;                       
+	        }
+	    }
+}
+
+class Thread02 implements Runnable {
+
+	 @Override
+	    public void run() {
+	        int i = 1;
+	        while (i < 10) {
+	            System.out.println("Thread 02 is running\n02 is Joyful");
+	            try {
+					MyThread01.sleep(2000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+	            i++;                       
+	        }
+	    }
+}
+
+public class Thread_02 {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		Thread t1 = new Thread(new Thread01());
+		Thread t2 = new Thread(new Thread02());
+		t1.start();
+		Thread.sleep(1000);
+		t2.wait();
+		t2.start();
+
+	}
+
+}

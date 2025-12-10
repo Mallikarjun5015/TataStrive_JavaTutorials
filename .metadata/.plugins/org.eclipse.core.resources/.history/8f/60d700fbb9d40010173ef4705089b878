@@ -1,0 +1,46 @@
+package methods;
+
+class NoParameter {
+
+	// Without parameter
+	public void greet() {
+		System.out.println("Hello Mallikarjun...");
+
+	}
+
+	// With Parameter
+	public int add(int a, int b) {
+		int c ;
+		c = a+b;
+		
+		return c;
+	}
+
+	// Overloaded Method
+	public int add(int a, int b, int c) {
+		return a + b + c;
+	}
+
+	public int sub(int a, int b) {
+		return a - b;
+	}
+
+}
+
+public class Methods_User_Derived {
+
+	public static void main(String[] args) {
+
+		NoParameter n1 = new NoParameter();
+		
+		
+		n1.greet();
+		
+		System.out.println("Sum is: " + n1.add(12, 24));
+		System.out.println("Result is: " + n1.add(24, 12));
+
+		System.out.println("Sum is: " + n1.add(12, 24, 36));
+
+	}
+
+}

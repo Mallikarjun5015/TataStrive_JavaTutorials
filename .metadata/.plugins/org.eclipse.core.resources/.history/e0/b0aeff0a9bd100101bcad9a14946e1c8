@@ -1,0 +1,30 @@
+package multiThreading;
+
+import java.util.Iterator;
+
+class Thread01 implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Thread 01...");
+	}
+}
+
+class Thread02 implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Thread 02...");
+	}
+}
+
+public class Thread_02 {
+
+	public static void main(String[] args) {
+		
+		Thread t1 = new Thread();
+		t.start();
+
+	}
+
+}

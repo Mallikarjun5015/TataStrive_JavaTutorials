@@ -1,0 +1,36 @@
+package collection_frameowrk;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class Collection_01 {
+
+	public static void main(String[] args) {
+		
+//		Collection<String> name = new ArrayList<String>();
+//		
+//		name.add("Mallikarjun");
+//		name.add("Dinga");
+//		name.add("Virat");
+//		
+//		System.out.println(name);
+
+		
+//		int [] arr = {10,10,10,10};
+//		System.out.println(arr[0]);
+		
+//		ArrayList list = new ArrayList<>();
+		List list = new ArrayList<>();
+		list.add("Mallikarjun");
+		list.add(5015);
+		list.add(10.1f);
+		
+		System.out.println(list);
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,72 @@
+package collection_frameowrk;
+
+import java.util.LinkedList;
+
+public class Collection_02_LinkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LinkedList<String> list = new LinkedList<String>();
+		
+		list.add("Mallikarjun");
+		list.add("Balaji");
+		list.add("Sandy");
+		list.add("Kushal");
+		
+		System.out.println(list);
+		
+		System.out.println(list.getFirst());
+		System.out.println(list.getLast());
+		System.out.println(list.get(2)+" index");
+		System.out.println(list.indexOf("Sandy")+ " index");
+		
+		list.addFirst("Sachin");
+		list.addLast("Seenivas");
+		
+		list.add(2, "java");
+		
+		System.out.println(list);
+		
+		System.out.println(list.contains("Sachin"));
+		System.out.println(list.isEmpty());
+		
+		System.out.println(list.size());
+		
+		System.out.println(list.indexOf("Sachin"));
+		
+		list.remove();
+		
+		System.out.println(list);
+		
+		System.out.println(list.peek());
+		list.poll();
+		System.out.println(list);
+		
+		list.push("Baluuu"); // First In
+		System.out.println(list);
+		list.pop(); // First Out
+		
+		list.offerFirst("Max");
+		list.offerLast("Mark");
+		System.out.println(list);
+		
+		/*
+		 * 
+		 * peak : return head i.e. 1st element
+		 * poll : removes the head i.e. 1st element 
+		 * offer : adds element at last index
+		 * offerFirst : adds element at 1st 
+		 * offerLast : adds element at last
+		 * 
+		 * */
+
+
+
+
+		
+		
+
+	}
+
+}

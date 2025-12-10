@@ -1,0 +1,4 @@
+#Tue Dec 02 10:34:55 IST 2025
+__DEFAULT__=false
+expression=createNewFile();
+org.eclipse.help.ui.localSearch.master=true

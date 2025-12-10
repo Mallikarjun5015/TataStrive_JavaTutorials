@@ -1,0 +1,23 @@
+package fileHandling;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class File02 {
+
+	public static void main(String[] args) throws IOException {
+		
+		File file = new File("file03.txt");
+		
+		if (file.createNewFile()) {
+			System.out.println("File Created Successfully...");
+		} else {
+			System.out.println("File creation Failed....");
+		}
+		
+		FileWriter file01 = new FileWriter("file03.txt");
+
+	}
+
+}

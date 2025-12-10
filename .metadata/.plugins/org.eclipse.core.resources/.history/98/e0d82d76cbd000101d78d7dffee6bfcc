@@ -1,0 +1,43 @@
+package fileHandling;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class File03 {
+
+	public static void main(String[] args) throws IOException {
+
+//		FileReader reader = new FileReader("files05.txt");
+//		int data = reader.read();
+//
+//		while (data != -1) {
+//			System.out.print((char) data);
+//			data = reader.read();
+//
+//		}
+//		reader.close();
+
+//		FileInputStream reader = new FileInputStream("files05.txt");
+//		int data = reader.read();
+//
+//		while (data != -1) {
+//			System.out.print((char) data);
+//			data = reader.read();
+//
+//		}
+//		System.out.println("\nRead the file data..");
+//		reader.close();
+
+		File file = new File("files05.txt");
+		FileReader reader = new FileReader(file);
+		char[] arr = new char[(int) file.length()];
+		reader.read(arr);
+		reader.close();
+		for (char c : arr) {
+			System.out.print(c);
+		}
+	}
+
+}

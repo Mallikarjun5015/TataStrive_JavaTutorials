@@ -1,0 +1,32 @@
+package sets;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Tree_Set {
+
+	public static void main(String[] args) {
+
+		TreeSet<Integer> num = new TreeSet<Integer>();
+		
+		num.add(15);
+		num.add(25);
+		num.add(5);
+		num.add(10);
+		num.add(20);
+		System.out.println(num);
+
+		num.add(0);
+		num.add(30);
+		System.out.println(num);
+		
+		num.remove(20);
+		
+		System.out.println(num.first());
+		System.out.println(num.last());
+		System.out.println(num.ceiling(10));
+		
+		
+	}
+
+}

@@ -1,0 +1,46 @@
+package collection_frameowrk;
+
+import java.util.LinkedList;
+import java.util.Vector;
+
+public class Collection_03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Vector<Integer> list = new Vector<Integer>();
+		
+		list.add(16);
+		list.add(18);
+		list.add(17);
+		list.add(45);
+		
+		System.out.println(list);
+		
+		System.out.println(list.getFirst());
+		System.out.println(list.getLast());
+		System.out.println(list.get(2)+" index");
+		System.out.println(list.indexOf(2)+ " index");
+		
+		list.addFirst(49);
+		list.addLast(412);
+		
+		list.add(2, 23);
+		
+		System.out.println(list);
+		
+		System.out.println(list.contains(412));
+		System.out.println(list.isEmpty());
+		
+		System.out.println(list.size());
+		
+		System.out.println(list.indexOf(412));
+		
+		list.remove(2);
+		
+		System.out.println(list);
+		
+		list.capacity();
+	}
+
+}

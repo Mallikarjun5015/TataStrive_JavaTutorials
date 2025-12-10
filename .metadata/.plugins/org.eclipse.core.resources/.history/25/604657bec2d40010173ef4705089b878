@@ -1,0 +1,32 @@
+package collection_frameowrk;
+
+import java.util.ArrayDeque;
+
+public class Collection_05_ADQ {
+
+	public static void main(String[] args) {
+		
+		ArrayDeque<Integer> num = new ArrayDeque<Integer>();
+		
+		num.offer(12);
+		num.offer(6);
+		num.offer(24);
+		num.offer(3);
+		System.out.println(num);
+		
+		num.remove();
+		System.out.println(num);
+		
+		num.offer(12);
+		System.out.println(num);
+		
+		num.remove();
+		System.out.println(num);
+		
+		num.add(12);
+		System.out.println(num);
+		
+
+	}
+
+}

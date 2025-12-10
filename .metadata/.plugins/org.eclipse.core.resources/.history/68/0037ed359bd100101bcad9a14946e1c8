@@ -1,0 +1,28 @@
+package multiThreading;
+
+class Thread01 extends Thread {
+
+	@Override
+	public void run() {
+		System.out.println("Thread 01...");
+	}
+}
+
+class Thread02 extends Thread {
+
+	@Override
+	public void run() {
+		System.out.println("Thread 02...");
+	}
+}
+
+public class Thread_02 {
+
+	public static void main(String[] args) {
+		
+		Thread t1 = new Thread();
+		t1.start();
+
+	}
+
+}
