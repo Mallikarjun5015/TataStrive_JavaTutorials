@@ -22,12 +22,12 @@ public class File01 {
 //		FileOutputStream fos = new FileOutputStream("image.png"); // constructor
 //		System.out.println(fos);
 //		
-//		Files.write(Paths.get("files02.txt"),"Hello Mallikarjun".getBytes());
+//		Files.write(Paths.get("files02.txt"),"".getBytes());
 //		System.out.println("File created successfully..");
 		
 		
 		
-//		Files.write(Path.of("files02.txt"), "Hello Mallikarjun".getBytes());
+//		Files.write(Path.of("files02.txt"), "".getBytes());
 //        System.out.println("File written successfully!");
 	}
 

@@ -4,6 +4,15 @@ abstract class AnymousInner{
 	public abstract void myMethod();
 }
 
+
+//class Sub extends AnymousInner{
+//
+//	@Override
+//	public void myMethod() {
+//		
+//	}
+//	
+//}
 public class Inner_class_04_Anynmous {
 
 	public static void main(String[] args) {

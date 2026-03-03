@@ -22,15 +22,15 @@ public class File03 {
 //		}
 //		reader.close();
 
-//		FileInputStream reader = new FileInputStream("files05.txt");
-//		int data = reader.read();
-//
-//		while (data != -1) {
-//			System.out.print((char) data);
-//			data = reader.read();
-//
-//		}
-//		reader.close();
+		FileInputStream reader = new FileInputStream("files05.txt");
+		int data = reader.read();
+
+		while (data != -1) {
+			System.out.print((char) data);
+			data = reader.read();
+
+		}
+		reader.close();
 
 //		List<String> list = Files.readAllLines(Paths.get("files05.txt"));
 //		
@@ -40,13 +40,13 @@ public class File03 {
 //		
 //		Files.delete(null);
 
-		File file = new File("files01.txt");
-
-		if (file.exists()) {
-			System.out.println(file.delete());
-		} else {
-			System.out.println("file not exist..!!");
-		}
+//		File file = new File("files01.txt");
+//
+//		if (file.exists()) {
+//			System.out.println(file.delete());
+//		} else {
+//			System.out.println("file not exist..!!");
+//		}
 
 //		
 //		System.out.println(file.getName()+" File name ");
