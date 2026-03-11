@@ -22,6 +22,9 @@ public class MyDetails {
 		System.out.println("My deatils");
 		Me m = new Me("Mallikarjun", 23);
 		m.detail();
+		
+		Me m1 = new Me("Dinga", 25);
+		m1.detail();
 
 	}
 
