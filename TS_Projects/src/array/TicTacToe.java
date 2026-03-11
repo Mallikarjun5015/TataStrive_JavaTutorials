@@ -6,21 +6,10 @@ public class TicTacToe {
 
 	public static void main(String[] args) {
 		
+		 int a = 5, b = 10, c = 3;
+	        
+	        int largest = (a >= b && a >= c) ? a : ((b >= c) ? b : c);
+	        System.out.println(largest);
+	    }
 		
-//		Scanner sc = new Scanner(System.in);
-//		
-//		int x=10,y=5;
-//		x+=y;
-//		System.out.println(x);
-//		x/=y;
-//		System.out.println(x);
-//		int z=x=y;
-//		System.out.println(z);
-		
-		System.out.println((5^2^5)^2);
-		
-        
-		
-	}
-
 }
