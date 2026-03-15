@@ -14,6 +14,10 @@ public class Prime {
 		return num.isProbablePrime(1);
 	}
 
+	public static BigInteger nextPrime(BigInteger no) {
+		
+		return no.nextProbablePrime();
+	}
 	public static void main(String[] args) {
 		BigInteger a = new BigInteger("10");
 		BigInteger b = new BigInteger("17");
@@ -34,6 +38,9 @@ public class Prime {
 		
 		System.out.println("Is the vaue "+num+" is prime: "+isPrime(num));
 		
+		BigInteger no = new BigInteger("23");
+		
+		System.out.println("Next prime of "+no+" is: "+nextPrime(no));
 
 	}
 
