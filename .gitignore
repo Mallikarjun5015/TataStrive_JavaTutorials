@@ -3,3 +3,13 @@
 /bin/
 /target/
 /target/
+
+# Eclipse
+.metadata/
+
+# Build folders
+bin/
+target/
+
+# Compiled Java files
+*.class
