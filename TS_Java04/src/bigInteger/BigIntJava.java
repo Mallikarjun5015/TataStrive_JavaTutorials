@@ -23,6 +23,12 @@ public class BigIntJava {
 		
 		a=BigInteger.valueOf(34567);
 		System.out.println("The value of a is: "+a);
+		
+		System.out.println(a.intValue()+" is Integer value");
+		System.out.println(a.longValue()+" is long value");
+		System.out.println(a.toString()+" is String value");
+		
+		
 
 	}
 
