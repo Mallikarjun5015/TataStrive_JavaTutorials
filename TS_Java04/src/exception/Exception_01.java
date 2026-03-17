@@ -14,6 +14,9 @@ public class Exception_01 {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
+		finally {
+			System.out.println("Finally block");
+		}
 	}
 
 }
