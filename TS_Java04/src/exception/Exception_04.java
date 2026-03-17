@@ -6,18 +6,19 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Exception_04 {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
+		
+		//Thread.sleep(10000);
 
 		try {
 			method();
-		} catch (ArithmeticException e) {
+		} catch (ArithmeticException  | ArrayIndexOutOfBoundsException e) {
 			System.out.println(e.getMessage());
 		}
 
-		catch (ArrayIndexOutOfBoundsException e) {
+		 catch (Exception e) {
 			System.out.println(e.getMessage());
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("General Exception catch block");
 		}
 
 	}
@@ -31,6 +32,8 @@ public class Exception_04 {
 		int d[] = new int[2];
 		d[0] = d[1] = 10;
 		// int e=d[2];
+		
+		int ab = Integer.parseInt("ABC");
 
 		Scanner sc = new Scanner(new File("File.txt"));
 
