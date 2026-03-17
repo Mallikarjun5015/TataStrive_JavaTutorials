@@ -1,21 +1,39 @@
 package exception;
 
 import java.io.File;
-import java.io.IOException;
+import java.io.FileNotFoundException;
+
+import java.util.Scanner;
 
 public class Exception_04 {
 	public static void main(String[] args) {
-		int[] arr = { 1, 2, 3, 4, 5 };
-
+		
 		try {
-			System.out.println(arr[5]);
+			method();
 		} catch (ArithmeticException e) {
-			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
 
 		catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+	public static void method() throws FileNotFoundException {
+		int a=10,b=5,c;
+		
+		c=a/b;
+		System.out.println("The value of C: "+c);
+		
+		int d[]= new int[2];
+		d[0]=d[1]=10;
+		//int e=d[2];
+		
+		Scanner sc = new Scanner(new File("File.txt"));
 		
 	}
 
