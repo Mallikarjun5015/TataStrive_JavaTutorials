@@ -17,7 +17,7 @@ class VotingCard {
 			throw new IllegalAgeException("Age is less than 18");
 		this.name = name;
 		this.age = age;
-		System.out.println(this.name+" is "+this.age+" year old and he can vote");
+		System.out.println(this.name + " is " + this.age + " year old and he can vote");
 	}
 }
 
@@ -31,7 +31,7 @@ public class UserDefined {
 			System.out.println(e.getMessage());
 			System.exit(0);
 		}
-		System.out.println(v1+" adress");
+		System.out.println(v1 + " adress");
 
 		v1 = null;
 		try {
@@ -39,7 +39,7 @@ public class UserDefined {
 		} catch (IllegalAgeException e) {
 			System.out.println(e.getMessage());
 		}
-		
+
 		finally {
 			System.out.println("Finally block");
 		}
