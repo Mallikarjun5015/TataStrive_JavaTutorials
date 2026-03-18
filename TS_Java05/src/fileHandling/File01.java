@@ -19,6 +19,18 @@ public class File01 {
 			System.out.println(file.getName()+" File creation Failed....");
 		}
 		
+		
+		System.out.println("File exists?: "+file.exists());
+		System.out.println("File can read? "+file.canRead());
+		System.out.println("File can write?: "+file.canWrite());
+		System.out.println("File length: "+file.length());
+		System.out.println("File name: "+file.getName());
+		System.out.println("File absolute path: "+file.getAbsolutePath());
+		System.out.println("File  "+file.getTotalSpace());
+		System.out.println("File "+file.getUsableSpace());
+		System.out.println(file.isDirectory());
+		System.out.println(file.isFile());
+		System.out.println(file.isHidden());
 //		FileOutputStream fos = new FileOutputStream("image.png"); // constructor
 //		System.out.println(fos);
 //		
