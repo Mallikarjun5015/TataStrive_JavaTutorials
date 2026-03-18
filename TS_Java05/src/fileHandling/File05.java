@@ -36,16 +36,27 @@ public class File05 {
 		
 		read = new FileReader(file);
 		
-		wt = new FileWriter("file02.txt");
+		wt = new FileWriter("files02.txt", true);
 		
 		int c=0;
 		while((c=read.read())!=-1) {
 			System.out.print((char)c);
-			wt.write(c);
+			//wt.write(c);
+			wt.append((char) c);
 		}
+		wt.append("\n");
 		
 		read.close();
 		wt.close();
+		
+//		File ft = new File("files02.txt");
+//		
+//		if (ft.delete()) {
+//			System.out.println();
+//			System.out.println(ft.getAbsolutePath()+" has been deleted...");
+//		} else {
+//			System.out.println("File delete failed...");
+//		}
 	}
 
 }

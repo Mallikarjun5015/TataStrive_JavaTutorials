@@ -18,7 +18,7 @@ public class File06 {
 		FileWriter wt = null;
 		
 		read = new FileReader(file);
-		wt = new FileWriter("file02.txt");
+		wt = new FileWriter("file02.txt", true);
 		
 		BufferedReader bfr=null;
 		BufferedWriter bft = null;
