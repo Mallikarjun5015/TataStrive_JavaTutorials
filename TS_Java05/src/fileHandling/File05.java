@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class File05 {
 
@@ -48,6 +49,26 @@ public class File05 {
 		
 		read.close();
 		wt.close();
+		
+		if (file.canRead()) {
+			System.out.println("\nFile is readable..");
+		} else {
+			System.out.println("\nFile cant be read..");
+		}
+		
+		if (file.canWrite()) {
+			System.out.println("File is writable..");
+		} else {
+			System.out.println("File cant be write..");
+		}
+		
+		Scanner reader = new Scanner(file);
+		
+		while (reader.hasNext()) {
+			String data = reader.nextLine();
+			System.out.println(data);			
+		}
+		
 		
 //		File ft = new File("files02.txt");
 //		
