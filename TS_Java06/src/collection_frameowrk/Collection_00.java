@@ -1,6 +1,7 @@
 package collection_frameowrk;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 class Test<String>{
@@ -36,6 +37,13 @@ public class Collection_00 {
 		System.out.println("Get method: "+test.getName());
 		
 		System.out.println("Object reference: "+test.name);
+		
+		Iterator<String> it = list.iterator();
+		
+		while(it.hasNext()) {
+			String name = it.next();
+			System.out.print(name+" ");
+		}
 		
 		
 		
