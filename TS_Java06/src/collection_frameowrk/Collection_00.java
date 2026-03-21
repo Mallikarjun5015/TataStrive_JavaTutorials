@@ -43,7 +43,13 @@ public class Collection_00 {
 		while(it.hasNext()) {
 			String name = it.next();
 			System.out.print(name+" ");
+			if(name.equals("Manga")) {
+				it.remove();
+			}
 		}
+		
+		System.out.println("\nNames after modified are:"+list);
+		
 		
 		
 		
