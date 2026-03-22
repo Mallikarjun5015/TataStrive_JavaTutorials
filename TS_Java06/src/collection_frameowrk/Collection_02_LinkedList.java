@@ -62,6 +62,10 @@ public class Collection_02_LinkedList {
 		l.add(2, "Dingi");
 		
 		System.out.println(l);
+		
+		for(String name: list) {
+			System.out.print(name+" ");
+		}
 		/*
 		 * 
 		 * peak : return head i.e. 1st element
