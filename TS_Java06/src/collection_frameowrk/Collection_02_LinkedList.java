@@ -51,6 +51,17 @@ public class Collection_02_LinkedList {
 		list.offerLast("Mark");
 		System.out.println(list);
 		
+		LinkedList<String> l = new LinkedList<>();
+		
+		l.add("Dinga");
+		l.add("Dingi");
+		l.add(1, "Gunda");
+		
+		System.out.println(l);
+		
+		l.add(2, "Dingi");
+		
+		System.out.println(l);
 		/*
 		 * 
 		 * peak : return head i.e. 1st element
