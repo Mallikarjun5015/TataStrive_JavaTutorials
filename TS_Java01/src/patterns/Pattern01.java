@@ -2,6 +2,20 @@ package patterns;
 
 public class Pattern01 {
 	public static void main(String[] args) {
+		// Pattern using while loop
+
+//		int n = 5;
+//		int i = 1;
+//		while (i <= 5) {
+//			int j = 1;
+//			while (j <= 5) {
+//				System.out.print("* ");
+//				j++;
+//			}
+//			System.out.println();
+//			i++;
+//		}
+
 		// Loops inside the loops: Pattern printing
 //            Triangle
 
@@ -17,6 +31,7 @@ public class Pattern01 {
 //                System.out.println();
 //            }
 
+		// Inverted right half pyramid
 //          * * * * *
 //          * * * *
 //          * * *
@@ -29,6 +44,16 @@ public class Pattern01 {
 //                }
 //                System.out.println();
 //            }
+
+//		for (int i = 1; i <= 5; i++) {
+//			for (int j = 1; j <= 5-i+1; j++) {
+//				System.out.print("* ");
+//			}
+//			System.out.println();
+//		}
+		
+		
+		// 
 
 //            1
 //            2 3
@@ -79,6 +104,30 @@ public class Pattern01 {
 //                }
 //                System.out.println();
 //            }
+		
+		
+		// Star square pattern with diagonals 
+		
+//      int rows=12;
+//      for (int i=1; i<=rows;i++)
+//      {
+//          for(int j=1;j<=rows;j++)
+//          {
+//              if(i==1 || j==1 || i== rows|| j==rows || i==j ||j==(rows-i+1))
+//              {
+//                  System.out.print("*"+" ");
+//              }
+//              else
+//              {
+//                  System.out.print(" "+" ");
+//              }
+//          }
+//          System.out.println();
+//      }
+		
+		
+		
+		
 
 //        *
 //      * * *
@@ -221,15 +270,15 @@ public class Pattern01 {
 //    *   *
 //      *
 
-		for (int i = 0; i <= 5; i++) {
-			for (int j = 0; j <= 6; j++) {
-				if (i == 1 && j % 3 == 0 || i == 0 && j % 3 != 0 || i - j == 2 || i + j == 8) {
-					System.out.print("*" + " ");
-				} else {
-					System.out.print(" " + " ");
-				}
-			}
-			System.out.println();
-		}
+//		for (int i = 0; i <= 5; i++) {
+//			for (int j = 0; j <= 6; j++) {
+//				if (i == 1 && j % 3 == 0 || i == 0 && j % 3 != 0 || i - j == 2 || i + j == 8) {
+//					System.out.print("*" + " ");
+//				} else {
+//					System.out.print(" " + " ");
+//				}
+//			}
+//			System.out.println();
+//		}
 	}
 }
