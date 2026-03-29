@@ -51,9 +51,72 @@ public class Pattern01 {
 //			}
 //			System.out.println();
 //		}
-		
-		
-		// 
+
+		// 180 degree right aligned triangle
+
+//          * 
+//        * * 
+//      * * * 
+//    * * * * 
+//  * * * * * 
+//* * * * * * 
+
+//		int rows = 6;
+//		for (int i = 1; i <= rows; i++) {
+//			
+//			for (int j = 2*rows-i; j >= i; j--) {
+//				System.out.print(" ");
+//			}
+//			
+//			for (int j = 1; j <= i; j++) {
+//				System.out.print("* ");
+//			}
+//			System.out.println();
+//		}
+
+		// Triangle pattern
+
+//      *
+//    * * *
+//  * * * * *
+//* * * * * * *
+
+		int rows = 5;
+		for (int i = 1; i <= rows; i++) {
+			for (int j = 1; j <= (rows - i); j++) {
+				System.out.print(" " + " ");
+
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print("*" + " ");
+			}
+			for (int j = 1; j <= (i - 1); j++) {
+				System.out.print("*" + " ");
+			}
+			System.out.println();
+		}
+
+//	      * 
+//	     * * 
+//	    * * * 
+//	   * * * * 
+//	  * * * * * 
+//	 * * * * * *
+
+//		int rows = 6;
+//		for (int i = 1; i <= rows; i++) {
+//			
+//			for (int j = 1; j <= rows-i; j++) {
+//				System.out.print(" ");
+//			}
+//			
+//			for (int j = 1; j <= i; j++) {
+//				System.out.print("* ");
+//			}
+//			System.out.println();
+//		}		
+
+		//
 
 //            1
 //            2 3
@@ -104,10 +167,9 @@ public class Pattern01 {
 //                }
 //                System.out.println();
 //            }
-		
-		
-		// Star square pattern with diagonals 
-		
+
+		// Star square pattern with diagonals
+
 //      int rows=12;
 //      for (int i=1; i<=rows;i++)
 //      {
@@ -124,30 +186,6 @@ public class Pattern01 {
 //          }
 //          System.out.println();
 //      }
-		
-		
-		
-		
-
-//        *
-//      * * *
-//    * * * * *
-//  * * * * * * *
-
-//            int rows = 5;
-//            for (int i = 1; i <= rows; i++) {
-//                for (int j = 1; j <= (rows - i); j++) {
-//                    System.out.print(" " + " ");
-//
-//                }
-//                for (int j = 1; j <= i; j++) {
-//                    System.out.print("*" + " ");
-//                }
-//                for (int j = 1; j <= (i - 1); j++) {
-//                    System.out.print("*" + " ");
-//                }
-//                System.out.println();
-//            }
 
 //            int rows = 5;
 //            for (int i = 5; i >=1; i--)
