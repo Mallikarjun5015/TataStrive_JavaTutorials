@@ -1,4 +1,4 @@
-package conditional_Probs;
+package conditional_probs;
 
 import java.util.Scanner;
 

@@ -1,8 +1,9 @@
-package conditional_Probs;
+package conditional_probs;
 
 import java.util.Scanner;
 
-public class Palindrom {
+public class ArmStrong {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
@@ -12,13 +13,15 @@ public class Palindrom {
 
 		while (num != 0) {
 			int a = num % 10;
-			rev = rev * 10 + a;
+			rev = rev + a * a * a;
 			num = num / 10;
 		}
 		if (n == rev) {
-			System.out.println(n + " number is palindrome");
+			System.out.println(n + " number is armstrong...");
 		} else {
-			System.out.println(n + " number is not palindrome");
+			System.out.println(n + " number is not armstrong...");
 		}
+		
+		sc.close();
 	}
 }
