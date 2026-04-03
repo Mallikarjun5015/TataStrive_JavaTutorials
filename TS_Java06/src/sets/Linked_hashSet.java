@@ -1,5 +1,6 @@
 package sets;
 
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 public class Linked_hashSet {
@@ -43,6 +44,24 @@ public class Linked_hashSet {
 		set.remove("Mango");
 		
 		System.out.println("After removing element " + set);
+		
+		System.out.println(set.remove("Ananas"));
+		
+		Iterator<String> ir = set.iterator();
+		
+		while(ir.hasNext()) {
+			System.out.print(ir.next()+" ");
+		}
+		
+		System.out.println();
+		
+		for (String string : set) {
+			System.out.print(string+" ");
+		}
+		
+		set.clear();
+		System.out.println("\n" + set);
+		
 		
 		
 
