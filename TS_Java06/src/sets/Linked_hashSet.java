@@ -41,7 +41,11 @@ public class Linked_hashSet {
 		
 		System.out.println("" + set);
 		
+		System.out.println("The size of the set is: " + set.size());
+		
 		set.remove("Mango");
+		
+		System.out.println("The size of the set is: " + set.size());
 		
 		System.out.println("After removing element " + set);
 		
@@ -57,6 +61,14 @@ public class Linked_hashSet {
 		
 		for (String string : set) {
 			System.out.print(string+" ");
+		}
+		
+		Object[] arr = set.toArray();
+		System.out.println();
+		
+		
+		for (Object object : arr) {
+			System.out.print(object+" ");
 		}
 		
 		set.clear();
