@@ -32,9 +32,19 @@ public class Tree_Set {
 		System.out.println(num.higher(18)+" > : higher");
 		System.out.println(num.lower(18)+" < : lower");
 		
-		
-		
-		
+		Set<String> ts = new TreeSet<>();
+
+        
+        ts.add("Dinga");
+        ts.add("Subba");
+        ts.add("Gunda");
+        ts.add("Munda");
+        ts.add("Banda");
+        ts.add("Subba");
+        //ts.add(null);
+        
+        
+        System.out.println(ts);	
 	}
 
 }
