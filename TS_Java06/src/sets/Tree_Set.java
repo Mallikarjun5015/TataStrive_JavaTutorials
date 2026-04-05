@@ -57,6 +57,12 @@ public class Tree_Set {
 			System.out.print(string+" ");
 		}
 		
+		System.out.println("\nIs empty? "+ts.isEmpty());
+		
+		ts.clear();
+		System.out.println(ts);
+		
+		System.out.println("Is empty? "+ts.isEmpty());
 	}
 
 }
